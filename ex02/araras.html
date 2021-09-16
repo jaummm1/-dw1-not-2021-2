@@ -7,6 +7,22 @@
     <title>Document</title>
 </head>
 <body>
+<!--imagem responsiva-->
+    <picture>
+<!--
+    quando os sources estiverem trabalhando com max width, as imagens prescisam ser colocadas do menor para a maior.
+-->
+
+        <source media="(max-width: 630px)" srcset="araras-p.jpg" type="imagem/jpg">
+        <source media="(max-width: 1030px)" srcset="araras-m.jpg" type="image/jpeg">
+        <img src="araras-g.jpg" alt="duas araras">
+    </picture>
     
+<!--voltar pagina-->
+    <p>
+        <a href="index.html" rel="prev"> &larr; voltar </a>
+    </p>
+
+
 </body>
 </html>
