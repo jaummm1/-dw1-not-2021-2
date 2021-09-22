@@ -5,97 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
-    <style>
-        /*trocando a familia de fontes de todos os elementos */
-        * {
-            font-family: calibri, arial, sans;
-        }
-
-        table {
-            border: 1px solid navy;
-            /*retirar o espaçamento entre bordas das celulas*/
-            border-collapse: collapse;
-        }
-        /*regras para celulas de cabeçalho e de conteudo*/
-        td, th {
-            border: 1px solid navy;
-        /*espaçamento interno da celula */
-        padding: 6px;
-        }
-
-        th{
-            /*cor de fundo paras celulas de cabeçalho */
-            background-color:lightblue;
-        }
-
-        .dir {
-            /*alinha o conteudo a direita*/
-            text-align: right;
-            
-        }
-    </style>
+    <link rel="stylesheet" href="13.css">
 </head>
 <body>
-    <!--
-    NOME            SIGLA             CAPITAL               AREA                POPULAÇAO
-    São paulo       SP                São paulo             248.219,481         46.649.132
-    Minas Gerais    MG                Belo horizonte        586.522,122         21.411.923
-    Rio de janeiro  RJ                Rio de janeiro        43.750,426          17.463.349
-    Espirito Santo  ES                 Vitoria              46.095,583          4.108.508
- !-->
 
-    <h1>Estados da região sudeste</h1>
     <!--
-        tags HTML de tabela:
-        <table>: define uma tabela
-        <tr>: linha de tabela (table row)
-        <th>: celula de linha de cabeçalho (table header)
-        <td>: celula de conteudo (table definition)
+        NOME            SIGLA           CAPITAL             ÁREA            POPULAÇÃO
+        São Paulo       SP              São Paulo           248.219,481     46.649.132
+        Minas Gerais    MG              Belo Horizonte      586.522,122     21.411.923
+        Rio de Janeiro  RJ              Rio de Janeiro      43.750,426      17.463.349
+        Espírito Santo  ES              Vitória             46.095,583      4.108.508
     -->
-    <table>
-        <!--linha de cabeçalho-->
-        <tr>
-            <th>nome</th>
-            <th>sigla</th>
-            <th>capital</th>
-            <th>area</th>
-            <th>população</th>
-        </tr>
-<!--
-        linhas de conteudo   
--->
-        <tr>
-            <td> São Paulo </td>
-            <td> SP </td>
-            <td> São Paulo </td>
-            <td class="dir"> 248.219,481 </td>
-            <td class="dir"> 46.649.132 </td>
-        </tr>
-        <tr>
-            <td> Minas Gerais </td>
-            <td> MG </td>
-            <td> Belo horizonte </td>
-            <td class="dir"> 586.522,122 </td>
-            <td class="dir">  21.411.923 </td>
 
-        </tr>
-        <tr>
-            <td> Rio de janeiro </td>
-            <td> RJ </td>
-            <td> Rio de janeiro  </td>
-            <td class="dir"> 43.750,426 </td>
-            <td class="dir">17.463.349</td>
-        </tr>
-
-        <tr>
-            <td> Espirito Santo </td>
-            <td> ES </td>
-            <td> Vitoria </td>
-            <td class="dir"> 46.095,583 </td>
-            <td class="dir"> 4.108.508 </td>
-        </tr>
-    </table>
+    <h1>Estados da Região Sudeste</h1>
+    <!--
+        Tags de tabela:
+        <table>: define uma tabela;
+        <tr>: linha da tabela;
+        <th>: célula de linha de cabeçalho;
+        <td>: célula de contúdo.
         
+        Tags semânticas:
+        <thead>: delimita região do cabeçalho;
+        <tbody>: delimita o corpo (área de contéudo);
+        <tfoot>: delimita o rodapé
+    -->
 
+    <table>
+        <!--Linha de cabeçalho-->
+        <thead>
+            <tr>
+                <!--O atributo colspan permite com que uma célula ocupe a largura de mais de uma coluna-->
+                <th colspan="3">DADOS GERAIS</th>
+                <th colspan="2">DADO DEMOGRÁFICOS</th>
+            </tr>
+            <tr>
+                <th>NOME</th>
+                <th>SIGLA</th>
+                <th>CAPITAL</th>
+                <th>ÁREA (km<sup>2</sup>)</th>
+                <th>POPULAÇÃO</th>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="center">SP</td>
+                <td>São Paulo</td>
+                <td class="dir">586.522,122</td>
+                <td class="dir">46.649.132</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="center">MG</td>
+                <td>Belo Horizonte</td>
+                <td class="dir">248.219,481</td>
+                <td class="dir">21.411.923</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="center">RJ</td>
+                <td>Rio de Janeiro</td>
+                <td class="dir">43.750,426</td>
+                <td class="dir">17.463.349</td>
+            </tr>
+
+            <tr>
+                <td>Espírito Santo</td>
+                <td  class="center">ES</td>
+                <td>Vitória</td>
+                <td class="dir">46.095,583</td>
+                <td class="dir">4.108.508</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">TOTAL</td>
+                <td  class="dir">924.587.612</td>
+                <td  class="center">89.632.912</td>
+            </tr>
+        </tfoot>
+
+    </table>
 </body>
 </html>
