@@ -1,0 +1,52 @@
+body{
+    background-color: blueviolet;
+}
+html{
+    font-size: 20px;
+}
+* {
+    font-family: Calibri, Arial, sans-serif;    /* Fonte para todos os elementos */
+}
+body {
+    font-size: 16px;            
+    background-color: aquamarine;
+}
+main {
+    font-size: 18px;                /* Tamanho da fonte */
+    border-radius: 16px;            /* Bordas arredondadas */
+    background-color: white;     /* Cor de fundo */
+    width: 80%;                     /* Largura */
+    margin: 30px auto;              /* Espaçamento externo */
+    padding: 20px;                  /* Espaçamento interno */
+}
+h1 {                                    
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.4);    /* Sombra do texto */
+    font-size: 3.0rem;
+    text-align: center;
+}
+figcaption {
+    font-style: italic;      /* Estilo da fonte */    
+}
+ol[type="1"], ol:not([type]) {  /* Lista ordenada de primeiro nível */
+    margin-left: 30%;       /* Margem esquerda */
+}
+ol[type="1"] > li, ol:not([type]) > li {
+    font-weight: bold;  /* Coloca em negrito os itens da lista ordenada de primeiro nível */
+}
+iframe {                /* Elemento que contém o vídeo do Youtube */
+    display: block;     /* Exibição em bloco */
+    margin: 0 auto;     /* Centraliza horizontalmente */
+}
+
+#mapa {
+
+    text-align: center;
+    background-image: url('mapa-brasil.png')
+    padding: 30px;
+}
+p.direita { 
+    text-align: right;}
+
+h2{
+    font-size: 1.5rem;
+}
