@@ -1,0 +1,84 @@
+  /* CSS reset */
+  body{
+    margin: 0;
+    padding: 0;
+}
+/********************/
+body {
+    border: 2px solid red;
+    padding: 10px;
+}
+h1{
+    /* sombra de texto, valores iguais aos de um box-shadow */
+    text-shadow: 2px 2px 4px slategray;
+}
+#box1 {
+    border: 2px solid blue;
+    margin: 100px;
+    padding: 50px;
+
+    /* sombra em um elemento de caixa 
+       valores: 
+       1) Deslocamento horizontal
+       2) Deslocamento vertical da sombra
+       3) Embaçamento da sombra (quanto maior, mais embaçado)
+       4) Cor
+    */
+    box-shadow: 10px 5px 10px black;
+}
+#box2 {
+   /* box-sizing: border-box;*//*inclui border e padding no tamanho do elemento*/
+    border: 20px solid green; /*os quatro lados*/
+    height: 300px;
+    width: 500px;
+    padding: 0px;   /* os quatro lados */
+    margin: 20px;   /* os quatro lados */
+    border-radius: 20px; /* canto arredondado */
+}
+#box3 {
+    background-color: darkseagreen;      
+    border-top: 2px solid orange;       /* topo */
+    border-right: 4px dotted blue;         /* direita */
+    border-bottom: 2px dashed darkmagenta;  /*embaixo*/
+    border-left: 12px ridge limegreen;      /*esquerda/*
+    
+    
+    /*
+    padding-top: 20px;
+    padding-right: 12px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    */
+    /* parte do topo segue o sentido horario */
+    padding: 20px 12px 50px 20px;
+    /*
+    margin-top: 30px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+    margin-left: 25px;*/
+
+    margin: 30px 16px 10px 25px;
+}
+#box4 {
+    height: 150px;
+    width: 150px;
+    border: 4px solid orangered;
+    border-radius: 50%;     /* gera um circulo */
+    display: flex;  /* habilita o flexbox */
+    align-items: center;    /* centraliza na vertical */
+    justify-content: center;    /*centraliza na horizontal */
+}
+#imagem1 {
+    border-radius: 50%;
+}
+#box5 {
+    background-color: oldlace;
+    border: 6px solid sienna;
+
+    /*quando sao dadas suas medidas, a primeira serve para top e bottom e a segunda para left e right*/
+    padding: 30px 50px;
+    margin: 40px 20px;
+
+    /* o outline (pouco utilizado) é um segundo contorno do elemento, externo a borda */
+    outline: 6px solid aqua;
+}
